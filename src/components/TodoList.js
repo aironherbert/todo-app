@@ -11,7 +11,6 @@ function TodoList() {
             return;
         }
         const newTodos = [todo, ...todos]
-
         setTodos(newTodos)
     };
     
@@ -19,7 +18,6 @@ function TodoList() {
         if(!newValue.text || /^\s*$/.test(newValue.text)){
             return;
         }
-
         setTodos(prev => prev.map(item =>(item.id === todoId ? newValue : item)));
     };
 
@@ -41,7 +39,7 @@ function TodoList() {
 
     return (
         <div>
-            <h1>What's the plan for today?</h1>
+            <h1>Lista de Tarefas</h1>
             <TodoForm onSubmit={addTodo}/>
             <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>
         </div>

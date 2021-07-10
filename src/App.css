@@ -7,11 +7,8 @@
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  );
+  background: rgb(28,168,179);
+  background: linear-gradient(90deg, rgba(28,168,179,0.9948354341736695) 12%, rgba(25,72,189,1) 84%, rgba(0,65,255,1) 100%);
 }
 .todo-app {
   display: flex;
@@ -24,6 +21,10 @@ body {
   margin: 128px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+  border-radius: 65px;
+  background: #201d1d;
+  box-shadow:  15px 15px 25px #0d0c0c,
+               -15px -15px 25px #332e2e;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h1 {
 
 .complete {
   text-decoration: line-through;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .todo-form {
@@ -44,11 +45,11 @@ h1 {
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid #0cff49;
   outline: none;
   width: 320px;
-  background: transparent;
-  color: #fff;
+  /* background: transparent; */
+  color: black;
 }
 
 .todo-input::placeholder {
@@ -61,11 +62,7 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(28,179,134,0.9948354341736695) 12%, rgba(25,189,33,1) 100%, rgba(26,255,0,1) 100%);
   color: #fff;
   text-transform: capitalize;
 }
@@ -101,7 +98,8 @@ h1 {
     rgba(255, 84, 17, 1) 100%
   );
 
-  padding: 16px;
+  /* padding: 16px; */
+  padding-right: 20px;
   border-radius: 5px;
   width: 90%;
 }
@@ -145,3 +143,10 @@ h1 {
 .edit-icon {
   color: #fff;
 }
+
+.todo-text{
+  width: 90%;
+  text-align: left;
+  padding: 20px;
+}
+
