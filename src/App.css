@@ -7,8 +7,9 @@
 }
 
 body {
-  background: rgb(28,168,179);
-  background: linear-gradient(90deg, rgba(28,168,179,0.9948354341736695) 12%, rgba(25,72,189,1) 84%, rgba(0,65,255,1) 100%);
+  background: linear-gradient(90deg, rgba(28,179,134,0.9948354341736695) 33%, rgba(25,45,189,1) 79%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .todo-app {
   display: flex;
